@@ -14,6 +14,18 @@ form input {
   border-radius: 0.3rem;
 }
 
+button {
+  background-color: rgb(0, 46, 145);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5em 3em;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+  margin-bottom: 55px;
+}
+
 /* Header */
 .header {
   margin-top: 10px;
@@ -24,13 +36,13 @@ form input {
 /* images */
 .img-instructions {
   max-width:60vw;
-  max-height: 400px;
+  max-height: 350px;
   width: auto;
   height: auto;
 }
 
 .img-versus {
-  max-width:250px;
+  max-width:200px;
   height: auto;
 }
 
