@@ -1,5 +1,11 @@
+// Components
 import Container from "../components/Container"
+import WeaponSelection from "../components/Dropdown"
+        
+// images
 import versus from '../img/versus.jpg'
+import p1 from '../img/p1.png'
+import p2 from '../img/p2.png'
 
 export default function Home() {
 
@@ -7,31 +13,20 @@ export default function Home() {
         <>
         <div className="game">
             <Container>
-                <form>
-                    <input 
-                        type="text" 
-                        placeholder="Player 1" 
-                        onChange={(e) => console.log("1")} 
-                    />
-                </form>
+                <img src={p1} className='img-player'/>
+                <WeaponSelection/>
             </Container>
 
             <img src={versus} className='img-versus'/>
 
             <Container>
-                <form>      
-                    <input 
-                        type="text" 
-                        placeholder="Prayer 2" 
-                        onChange={(e) => console.log("2")} 
-                    />
-                </form>
+                <img src={p2} className='img-player'/>
+                <WeaponSelection/>
             </Container>
         </div>
             <Container>
                 <button type="submit">Play</button>
             </Container>
         </>
-        
     )
 }
