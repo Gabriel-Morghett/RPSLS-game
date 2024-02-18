@@ -1,0 +1,51 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
+
+/* Header */
+.header {
+  margin-top: 10px;
+  width: 100%;
+	text-align: center;
+}
+
+/* images */
+.img-instructions {
+  max-width:60vw;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+.img-versus {
+  max-width:250px;
+  height: auto;
+}
+
+/* Container */
+.container {
+  width: min(80%, 45rem);
+  margin: 2px auto;
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+}
+
+.game {
+  border-width: 20px;
+  display: flex;
+  flex-direction: line;
+  justify-content: space-between;
+}
