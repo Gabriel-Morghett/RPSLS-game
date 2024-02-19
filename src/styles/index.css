@@ -76,3 +76,7 @@ button:disabled {
   flex-direction: line;
   justify-content: space-between;
 }
+
+.result {
+  font-size: 75px;
+}

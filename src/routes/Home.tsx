@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 // Components
 import Container from "../components/Container"
@@ -14,16 +15,18 @@ interface Weapon {
     name: string;
 }
 
-export default function Home() {
+interface HomeProps {
+    setResult: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Home: React.FC<HomeProps> = ({ setResult }) => {
     const [player1Weapon, setPlayer1Weapon] = useState<Weapon | null>(null);
     const [player2Weapon, setPlayer2Weapon] = useState<Weapon | null>(null);
+    const navigate = useNavigate();
 
     const handlePlay = async () => {
 
         try {
-            console.log("selected weapon 1: ", player1Weapon);
-            console.log("selected weapon 2: ", player2Weapon);
-
             const response = await axios.post(
                 "https://klaxpd7f1k.execute-api.us-east-1.amazonaws.com/default/result",
                 {
@@ -37,6 +40,11 @@ export default function Home() {
                 }
             );
             console.log("API response:", response.data);
+            if (response.status === 200 && response.data.result) {
+                setResult(response.data.result);
+                navigate("/result");
+            }
+            
         } catch (error) {
             console.error("Error:", error);
         }
@@ -72,3 +80,6 @@ export default function Home() {
         </>
     )
 }
+
+
+export default Home;
