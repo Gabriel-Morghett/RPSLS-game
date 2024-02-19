@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# Rock Paper Scissors Lizard Spock
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This game is an extension of the old, well known game "Rock paper scissors", or Jankenpon, from Japanese
 
-## Available Scripts
+## How the game works
+In this variant, two more options are added to the game, Lizard and Spock, with a total of 5 options for the players to choose from. Even with this addition, every option still interects with eachother in a fair way, meaning each option will win agains 2 options, loose against the other 2 and tie when matched with itself.
 
-In the project directory, you can run:
+The exact way these interactions occur are listed here:
+- Scissors cuts paper
+- Paper covers rock
+- Rock crushes Lizard
+- Lizard poisons Spock
+- Spock smashes scissors
+- Scissors decapitates Lizard
+- Lizard eats paper
+- Paper disproves Spock
+- Spock vaporizes rock
+- Rock crushes scissors
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Running on your computer
+You can run this aplication locally in your computer by following these steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Download ZIP
+In this project [repository](https://github.com/Gabriel-Morghett/rpsls-game), click on the "Code" button and download the zip file to your computer, then extract the zip file.
 
-### `npm test`
+## Open folder in a terminal
+Open a terminal and navegate to the folder you just extracted using the "cd" comand.
+If you have Visual Studio Code instaled in your computer, you can right-click the folder, click on "Open with Code" and use the terminal from there.
+If you have no idea what I'm talking about, [this tutorial](https://www.wikihow.com/Change-Directories-in-Command-Prompt) might help.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## NPM
+For this step you have to have npm installed in your computer, learn how to do that [here](https://phoenixnap.com/kb/install-node-js-npm-on-windows).
+With the terminal in the root folder, first run "npm install" and then "npm start" to get the aplication going.
+It should automatically open a [localhost:3000](localhost:3000) page on your web browser, but if this doesn't happen, you can open it yourself.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Have fun
+Now you can just play it with a friend and see who wins!
+Due to the random aspect of the game, you can use it to decide who will do the dishes after the gaming night, or who will decide which movie to watch, etc...
