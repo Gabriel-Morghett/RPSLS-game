@@ -26,6 +26,11 @@ button {
   margin-bottom: 55px;
 }
 
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
 /* Header */
 .header {
   margin-top: 10px;
